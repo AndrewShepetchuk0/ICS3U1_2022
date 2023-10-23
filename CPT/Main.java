@@ -61,62 +61,31 @@ public class Main extends JPanel implements KeyListener
                 py -= pSize;
                 dir = "up";
                 //Moves player and changes current player image
-                
-                if (background.getRGB(px, py) == Color.BLACK.getRGB()){
-                    JOptionPane.showMessageDialog(null, "You touched the wall.","Message", JOptionPane.ERROR_MESSAGE);
-                        main.dispose();
-                }
-                if (background.getRGB(px, py) == Color.RED.getRGB()){
-                    System.out.println("good job");
-                    JOptionPane.showMessageDialog(null, "Congratulations! You completed the game!","Message", JOptionPane.PLAIN_MESSAGE);
-                        main.dispose();
-                }
                 break;
             case KeyEvent.VK_S:
                 py += pSize;
                 dir = "down";
                 //Moves player and changes current player image
-                
-                if (background.getRGB(px, py) == Color.BLACK.getRGB()){
-                    JOptionPane.showMessageDialog(null, "You touched the wall.","Message", JOptionPane.ERROR_MESSAGE);
-                        main.dispose();
-                }
-                if (background.getRGB(px, py) == Color.RED.getRGB()){
-                    System.out.println("good job");
-                    JOptionPane.showMessageDialog(null, "Congratulations! You completed the game!","Message", JOptionPane.PLAIN_MESSAGE);
-                        main.dispose();
-                }
                 break;
             case KeyEvent.VK_A:
                 px -= pSize;
                 dir = "left";
                 //Moves player and changes current player image
-                
-                if (background.getRGB(px, py) == Color.BLACK.getRGB()){
-                    JOptionPane.showMessageDialog(null, "You touched the wall.","Message", JOptionPane.ERROR_MESSAGE);
-                        main.dispose();
-                }
-                if (background.getRGB(px, py) == Color.RED.getRGB()){
-                    System.out.println("good job");
-                    JOptionPane.showMessageDialog(null, "Congratulations! You completed the game!","Message", JOptionPane.PLAIN_MESSAGE);
-                        main.dispose();
-                }
                 break;
             case KeyEvent.VK_D:
                 px += pSize;
                 dir = "right";
                 //Moves player and changes current player image
-                
-                if (background.getRGB(px, py) == Color.BLACK.getRGB()){
-                    JOptionPane.showMessageDialog(null, "You touched the wall.","Message", JOptionPane.ERROR_MESSAGE);
-                        main.dispose();
-                }
-                if (background.getRGB(px, py) == Color.RED.getRGB()){
-                    System.out.println("good job");
-                    JOptionPane.showMessageDialog(null, "Congratulations! You completed the game! ","Message", JOptionPane.PLAIN_MESSAGE);
-                        main.dispose();
-                }
                 break;
+        }
+        if (background.getRGB(px, py) == Color.BLACK.getRGB()){
+            JOptionPane.showMessageDialog(null, "You touched the wall.","Message", JOptionPane.ERROR_MESSAGE);
+                main.dispose();
+        }
+        if (background.getRGB(px, py) == Color.RED.getRGB()){
+            System.out.println("good job");
+            JOptionPane.showMessageDialog(null, "Congratulations! You completed the game!","Message", JOptionPane.PLAIN_MESSAGE);
+                main.dispose();
         }
         repaint();
     }
