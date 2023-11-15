@@ -31,7 +31,8 @@ public class Main extends JPanel implements KeyListener
     {
         setPreferredSize(new Dimension(resolution[0], resolution[1]));
         setFocusable(true);
-        addKeyListener(this);      
+        addKeyListener(this);
+        pImage();
     }
     //Sets the game resolution to the values determined in the previous variables, makes the game window focusable, and implements key input
 
