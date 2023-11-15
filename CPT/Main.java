@@ -11,8 +11,8 @@ public class Main extends JPanel implements KeyListener
     
     public static int pSize = 60;
     //Variable for the size fo the player
-    public int px = 120, py = 120, x = 60, y = 60;
-    //Basic variables for resolution, character size and default character location
+    public int x = 60, y = 60;
+    //Basic variables for character location
     public BufferedImage up, down, left, right, wrld1;
     public String dir = "down";
     //creates image variable for each direction and makes a string file for the direction of the player with the default value set to up as well as the default player location
